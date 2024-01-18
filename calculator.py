@@ -1,3 +1,5 @@
+from art import logo
+
 # Adds numbers.
 def add(n1, n2):
     return n1 + n2
@@ -30,14 +32,15 @@ def calculate(operation_symbol, first_number, second_number):
 
 # Takes user's inputs an calls the calculation. Controls flow.
 def calculator():
-    num1 = int(input("What's the first number?: "))
+    print(logo)
+    num1 = float(input("What's the first number?: "))
     should_continue = True
 
     while should_continue == True:
         for symbol in operations:
             print(symbol)
         operation_symbol = input("Pick an operation from the list list above: ")
-        num2 = int(input("What's the next number?: "))
+        num2 = float(input("What's the next number?: "))
 
         # Gets the calculation result.
         result = calculate(operation_symbol, num1, num2)

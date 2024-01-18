@@ -1,1 +1,1 @@
-### A classic CLI calculator.
+### Recursive calculator.
